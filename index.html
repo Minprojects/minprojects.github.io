@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Minimal Project</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+  </head>
+  <body>
+        <img src="4.png" alt="logo" class="logo"></figure>
+    <div class="container">
+      <div class="data">🌌 MINIMAL PROJECT 🌌</div>
+    </div>
+    <script>
+      const text=baffle(".data");
+      text.set({
+        characters : '█<▓ ░█▒█▒ ░▒/░█ ▓▒▓ █/██▒ █▓█/ █▒█ ░█▒█ ▓░█▒',
+        speed: 140
+      });
+      text.start();
+      text.reveal(4000);
+    </script>
+    <style>
+    html, body {
+  width: 100%;
+  margin: 0 auto;
+  background: #101010;
+}
+.data{
+  font-family: Poppins;
+  color: #5ec39e;
+  font-size: 30px;
+  letter-spacing: 12px;
+  font-weight:600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo{
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:270px;
+margin:auto;
+width:250px;
+height:250px;
+}
+</style>
+  </body>
+</html>
